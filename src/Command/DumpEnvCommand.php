@@ -41,7 +41,7 @@ class DumpEnvCommand extends BaseCommand
             ->setDefinition([
                 new InputArgument('env', InputArgument::REQUIRED, 'The application environment to dump .env files for - e.g. "prod".'),
             ])
-            ->addOption('empty', null, InputOption::VALUE_NONE, 'Ignore the ".env" file content')
+            ->addOption('empty', null, InputOption::VALUE_NONE, 'Ignore the content of .env files')
         ;
     }
 
